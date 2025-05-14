@@ -24,10 +24,6 @@ Prevent container crashes or startup failures due to timing issues in Docker Com
 
 ```bash
 ./wait-for-service.sh <host> <port> <url-path> <jar-name>
-
-
-
-
 Docker Integration
 
 1. Copy this script into your project
