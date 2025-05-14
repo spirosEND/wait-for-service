@@ -1,22 +1,6 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# feel free to make improvements and contributions
 
-## 📄 License
 
-This project is licensed under a modified [MIT License](LICENSE).
-
-You are free to:
-
-- Use
-- Copy
-- Modify
-- Distribute
-- Share
-
-🚫 However, **you are NOT allowed to sell** this software or any derivative works, either individually or as part of a commercial product or service.
-
-## 🙌 Contribute
-
-Have ideas or found an issue? [Open a PR](CONTRIBUTING.md) or start a discussion! Community contributions are welcome!
 
 # wait-for-service.sh
 
@@ -47,9 +31,3 @@ Put wait-for-service.sh into the same directory as your Dockerfile (usually /doc
 
 2. Modify your Dockerfile
 Update your service's Dockerfile to copy and use this script:
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-You are free to use, modify, and distribute this software in both private and commercial settings.
-```
