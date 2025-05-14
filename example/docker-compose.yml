@@ -1,0 +1,39 @@
+##docker-compose.yml example
+
+version: '3.8'
+
+services:
+
+## ..
+## ..
+## ..
+## ..
+
+  keycloak-service:
+    image: quay.io/keycloak/keycloak:22.0.1
+    command: start-dev
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/realms/master"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  analytics-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - keycloak-service
+
+
+      ##What This Example Does
+##Starts Keycloak as keycloak-service.
+
+##Runs analytics-service, which waits for Keycloak to respond at /realms/master.
+
+##Demonstrates real-world dependency and usage.
