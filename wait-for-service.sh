@@ -16,7 +16,7 @@
 # USAGE:
 # ./wait-for-service.sh <host> <port> <url-path> <jar-name>
 # Example:
-# ./wait-for-service.sh iam-service 8080 /realms/master analytics-service-1.0.0-SNAPSHOT.jar
+# ./wait-for-service.sh keycloak-service 8080 /realms/master analytics-service-1.0.0-SNAPSHOT.jar
 # ----------------------
 
 HOST="$1"
