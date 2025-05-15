@@ -4,7 +4,7 @@
 # A simple script to wait for a dependent service to become ready before launching your app.
 #
 # PURPOSE:
-#   Ensure that a critical dependent service (e.g., IAM, Keycloak, PostgreSQL with REST) is fully
+#   Ensure that a critical dependent service (e.g.,  Keycloak, PostgreSQL with REST) is fully
 #   up and reachable via HTTP before launching your Java service. This is especially useful when
 #   "depends_on" in docker-compose is not enough.
 #
